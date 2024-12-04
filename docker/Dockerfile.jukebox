@@ -28,6 +28,9 @@ RUN apt-get update && apt-get install -qq -y \
 # Copy in the source code using the correct permissions
 COPY --chown=${USER}:${USER} . ${INSTALLATION_PATH}/
 
+# add user to dialout group (to access serial port rfid reader)
+RUN usermod -aG dialout ${USER}
+
 # Switch to the `$USER` (typically `pi`)
 USER ${USER}
 WORKDIR ${HOME}
