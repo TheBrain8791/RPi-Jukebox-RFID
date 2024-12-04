@@ -15,6 +15,7 @@ pyalsaaudio
 pulsectl
 python-mpd2
 ruamel.yaml
+nfcpy
 # For playlistgenerator
 requests
 # For the publisher event reactor loop:
