@@ -34,6 +34,7 @@ services:
     environment:
       - PULSE_SERVER=tcp:host.docker.internal:4713
     ports:
+      - 5678:5678
       - 5555:5555
       - 5556:5556
       - 5557:5557

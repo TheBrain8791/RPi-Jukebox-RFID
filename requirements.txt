@@ -38,3 +38,7 @@ mock
 
 # API docs generation
 pydoc-markdown
+
+
+#pyhton debug
+debugpy
